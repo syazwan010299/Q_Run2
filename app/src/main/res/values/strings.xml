@@ -1,3 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Q_Run2</string>
+    <string name="app_name">qrunapp</string>
+    <string name="ecotrail_description">
+        In conjunction with the celebration of 80th Anniversary of Malaysian Nature Society (MNS) in championing nature conservation and wildlife protection through research and advocacy in Malaysia,
+        we are proud to be the co-organiser of the Ecotrail Putrajaya 2019, in our quest to create greater awareness for all Malaysians in preserving our mother nature.
+        \n\nWe invite all to participate in the MNS 5km category and together, we shall run for a greener tomorrow.
+    </string>
+    <string name="sherun_description">
+        Let us join SHERUN Gorgeous Girl 2020!
+        \n\nYou can choose either to join 2.5km or 5km, grab the super early bird ticket now!!
+    </string>
+    <string name="greatmsia_description">
+        The Great Malaysia Marathon Series 2019 is series of running events that will be held across Malaysia’s two states namely Cyberjaya and Johor.
+        The event is aimed to expand to other states of Malaysia in 2020 depending on feasibility, demand, and public response.
+        It will be held as part of an effort to bring Malaysians from different races, gender, ages or religions together and celebrate our uniqueness.
+    </string>
 </resources>
