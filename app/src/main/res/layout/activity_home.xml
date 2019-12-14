@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".HomeActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -13,26 +12,18 @@
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp">
 
-        <Button
-            android:id="@+id/button1"
+        <TextView
+            android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Testing"
-            android:onClick="goToActivity2"
-            />
+            android:text="You are Logged In"
+            android:textSize="35dp"/>
+
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/logout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TestingCamera"
-            android:onClick="goToActivity3"
-            />
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Testing SignIn SignUp Logout"
-            android:onClick="goToActivity4"
+            android:text="Logout"
             />
 
     </LinearLayout>

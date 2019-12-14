@@ -58,6 +58,9 @@ public class MainActivity extends AppCompatActivity {
         public void goToActivity3(View view){
             Intent intent = new Intent(this, camera.class);
             startActivity(intent);
-
+    }
+    public void goToActivity4(View view){
+        Intent intent = new Intent(this, Sign_Up.class);
+        startActivity(intent);
     }
 }

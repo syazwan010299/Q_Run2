@@ -15,4 +15,5 @@
         The event is aimed to expand to other states of Malaysia in 2020 depending on feasibility, demand, and public response.
         It will be held as part of an effort to bring Malaysians from different races, gender, ages or religions together and celebrate our uniqueness.
     </string>
+    <string name="title_activity_home">HomeActivity</string>
 </resources>
