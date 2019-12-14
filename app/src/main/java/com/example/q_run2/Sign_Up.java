@@ -42,6 +42,7 @@ public class Sign_Up extends AppCompatActivity {
             public void onClick(View v) {
                 String names = name.getText().toString().trim();
                 String IC = identityNum.getText().toString().trim();
+                String phone = phoneNum.getText().toString().trim();
                 String emailauth = email.getText().toString().trim();
                 String password = passwordIn.getText().toString().trim();
                 String password2 = passwordRepeat.getText().toString().trim();
@@ -52,6 +53,10 @@ public class Sign_Up extends AppCompatActivity {
                 else if (IC.isEmpty()){
                     identityNum.setError("Please insert your ic number");
                     identityNum.requestFocus();
+                }
+                else if (phone.isEmpty()){
+                    phoneNum.setError("Please insert your ic number");
+                    phoneNum.requestFocus();
                 }
                 else if (emailauth.isEmpty()){
                     email.setError("Please insert your email");
@@ -69,10 +74,10 @@ public class Sign_Up extends AppCompatActivity {
                     passwordRepeat.setError("Please insert the same password as the above");
                     passwordRepeat.requestFocus();
                 }
-                else if (names.isEmpty() && IC.isEmpty() && emailauth.isEmpty() && password.isEmpty() && password2.isEmpty()) {
+                else if (names.isEmpty() && IC.isEmpty() && phone.isEmpty() && emailauth.isEmpty() && password.isEmpty() && password2.isEmpty()) {
                     Toast.makeText(Sign_Up.this, "Fields are Empty", Toast.LENGTH_SHORT).show();
                 }
-                else if ( !(names.isEmpty() && IC.isEmpty() && emailauth.isEmpty() && password.isEmpty() && password2.isEmpty() )){
+                else if ( !(names.isEmpty() && IC.isEmpty() && phone.isEmpty() && emailauth.isEmpty() && password.isEmpty() && password2.isEmpty() )){
                     mFirebaseAuth.createUserWithEmailAndPassword(emailauth,password).addOnCompleteListener(Sign_Up.this, new
                             OnCompleteListener<AuthResult>() {
                                 @Override
