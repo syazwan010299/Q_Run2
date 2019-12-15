@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -27,7 +28,7 @@ public class Sign_Up extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign__up);
-        signIn = (TextView) findViewById(R.id.SignIn);
+        //signIn = (TextView) findViewById(R.id.SignIn);
         name = (EditText) findViewById(R.id.name);
         identityNum = (EditText) findViewById(R.id.identityNum);
         phoneNum = (EditText) findViewById(R.id.phoneNum);
@@ -43,9 +44,9 @@ public class Sign_Up extends AppCompatActivity {
                 String names = name.getText().toString().trim();
                 String IC = identityNum.getText().toString().trim();
                 String phone = phoneNum.getText().toString().trim();
-                String emailauth = email.getText().toString().trim();
-                String password = passwordIn.getText().toString().trim();
-                String password2 = passwordRepeat.getText().toString().trim();
+                String emailauth = email.getText().toString();
+                String password = passwordIn.getText().toString();
+                String password2 = passwordRepeat.getText().toString();
                 if (names.isEmpty()){
                     name.setError("Please insert your name");
                     name.requestFocus();
@@ -77,7 +78,7 @@ public class Sign_Up extends AppCompatActivity {
                 else if (names.isEmpty() && IC.isEmpty() && phone.isEmpty() && emailauth.isEmpty() && password.isEmpty() && password2.isEmpty()) {
                     Toast.makeText(Sign_Up.this, "Fields are Empty", Toast.LENGTH_SHORT).show();
                 }
-                else if ( !(names.isEmpty() && IC.isEmpty() && phone.isEmpty() && emailauth.isEmpty() && password.isEmpty() && password2.isEmpty() )){
+                else {
                     mFirebaseAuth.createUserWithEmailAndPassword(emailauth,password).addOnCompleteListener(Sign_Up.this, new
                             OnCompleteListener<AuthResult>() {
                                 @Override
@@ -90,12 +91,11 @@ public class Sign_Up extends AppCompatActivity {
                                 }
                             });
                 }
-                else{
-                    Toast.makeText(Sign_Up.this, "Error Occurred", Toast.LENGTH_SHORT).show();
-                }
+
             }
         });
 
+        /*
         signIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -103,6 +103,7 @@ public class Sign_Up extends AppCompatActivity {
                 startActivity(a);
             }
         });
+        */
 
     }
 }

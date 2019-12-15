@@ -30,7 +30,7 @@ public class Log_In extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log__in);
-        signUp = (TextView) findViewById(R.id.SIGNUP);
+        //signUp = (TextView) findViewById(R.id.SIGNUP);
         emailInput = (EditText) findViewById(R.id.emailInput);
         passwordInput = (EditText) findViewById(R.id.passwordInput);
         login = (Button) findViewById(R.id.login);
@@ -86,6 +86,7 @@ public class Log_In extends AppCompatActivity {
                 }
             }
         });
+        /*
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -93,6 +94,8 @@ public class Log_In extends AppCompatActivity {
                 startActivity(intSignUp);
             }
         });
+        */
+
     }
 
     @Override
