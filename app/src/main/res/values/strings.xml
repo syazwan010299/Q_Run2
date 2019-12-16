@@ -15,5 +15,13 @@
         The event is aimed to expand to other states of Malaysia in 2020 depending on feasibility, demand, and public response.
         It will be held as part of an effort to bring Malaysians from different races, gender, ages or religions together and celebrate our uniqueness.
     </string>
-    <string name="title_activity_home">HomeActivity</string>
+    <string-array name="payment_method">
+        <item>MayBank2U</item>
+        <item>Credit/Debit Card</item>
+        <item>CIMB Clicks</item>
+        <item>Public eBank</item>
+    </string-array>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 </resources>

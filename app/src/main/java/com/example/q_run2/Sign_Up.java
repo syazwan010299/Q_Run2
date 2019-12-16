@@ -74,19 +74,19 @@ public class Sign_Up extends AppCompatActivity {
                 else if (!(password.equals(password2))){
                     passwordRepeat.setError("Please insert the same password as the above");
                     passwordRepeat.requestFocus();
-                }
+                }/*
                 else if (names.isEmpty() && IC.isEmpty() && phone.isEmpty() && emailauth.isEmpty() && password.isEmpty() && password2.isEmpty()) {
                     Toast.makeText(Sign_Up.this, "Fields are Empty", Toast.LENGTH_SHORT).show();
-                }
+                }*/
                 else {
                     mFirebaseAuth.createUserWithEmailAndPassword(emailauth,password).addOnCompleteListener(Sign_Up.this, new
                             OnCompleteListener<AuthResult>() {
                                 @Override
                                 public void onComplete(@NonNull Task<AuthResult> task) {
-                                    if (!task.isSuccessful()){
-                                        Toast.makeText(Sign_Up.this, "Sign Up Unsuccessful, Please Try Again", Toast.LENGTH_SHORT).show();
-                                    }else{
+                                    if (task.isSuccessful()){
                                         startActivity(new Intent(Sign_Up.this, HomeActivity.class));
+                                    }else{
+                                        Toast.makeText(Sign_Up.this, "Sign Up Unsuccessful, Please Try Again", Toast.LENGTH_SHORT).show();
                                     }
                                 }
                             });

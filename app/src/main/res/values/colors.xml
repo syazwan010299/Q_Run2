@@ -7,12 +7,9 @@
     <color name="cyanGreen">#3FE9CC</color>
     <color name="richBlack">#050505</color>
     <color name="powderWhite">#FDFFFC</color>
-    <color name="seaGreen">#1B9AAA</color>
     <color name="beigeGrad">#FFE6D9</color>
     <color name="redGrad">#FF846C</color>
     <color name="darkGrad">#C5AEB2</color>
     <color name="brownBg">#D79583</color>
-    <color name="iceBlue">#C2F9FF</color>
-    <color name="brightGreen">#43BD00</color>
-    <color name="darkGreen">#008600</color>
+
     </resources>
