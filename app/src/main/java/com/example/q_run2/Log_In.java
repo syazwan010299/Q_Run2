@@ -44,11 +44,12 @@ public class Log_In extends AppCompatActivity {
                 FirebaseUser mFirebaseUser = mFirebaseAuth.getCurrentUser();
                 if (mFirebaseUser != null){
                     Toast.makeText(Log_In.this,"You are Logged In",Toast.LENGTH_SHORT).show();
-                    Intent i = new Intent(Log_In.this,HomeActivity.class);
+                    Intent i = new Intent(Log_In.this,Homepage_Runner.class);
                     startActivity(i);
                 }else{
                     Toast.makeText(Log_In.this,"Error",Toast.LENGTH_SHORT).show();
                 }
+
             }
         };
         login.setOnClickListener(new View.OnClickListener() {
@@ -75,7 +76,7 @@ public class Log_In extends AppCompatActivity {
                                     if (!task.isSuccessful()){
                                         Toast.makeText(Log_In.this, "Log In Error, Please Log In Again", Toast.LENGTH_SHORT).show();
                                     }else{
-                                        Intent inttoHome = new Intent(Log_In.this,HomeActivity.class);
+                                        Intent inttoHome = new Intent(Log_In.this,Homepage_Runner.class);
                                         startActivity(inttoHome);
                                     }
                                 }
@@ -101,7 +102,7 @@ public class Log_In extends AppCompatActivity {
     @Override
     protected void onStart(){
         super.onStart();
-        FirebaseUser currentUser = mFirebaseAuth.getCurrentUser();
+        //FirebaseUser currentUser = mFirebaseAuth.getCurrentUser();
         mFirebaseAuth.addAuthStateListener(mAuthStateListener);
     }
 

@@ -144,17 +144,15 @@ public class Sign_Up extends AppCompatActivity {
                         // the auth state listener will be notified and logic to handle the
                         // signed in user can be handled in the listener.
                         if (!task.isSuccessful()) {
-                            /*Toast.makeText(Sign_Up.this, "Authentication failed.",
-                                    Toast.LENGTH_SHORT).show();*/
-                            startActivity(new Intent(Sign_Up.this, Homepage_Runner.class));
-                        }else{
+                            Toast.makeText(Sign_Up.this, "Authentication failed.",
+                                    Toast.LENGTH_SHORT).show();
                             //startActivity(new Intent(Sign_Up.this, Homepage_Runner.class));
                         }
 
                         // [START_EXCLUDE]
                         //hideProgressDialog();
                         // [END_EXCLUDE]
-
+                        startActivity(new Intent(Sign_Up.this,Log_In.class));
 
                     }
                 });

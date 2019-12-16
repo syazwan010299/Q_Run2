@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "179155447644",
+    "firebase_url": "https://qrun2database.firebaseio.com",
+    "project_id": "qrun2database",
+    "storage_bucket": "qrun2database.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179155447644:android:9a43095aea9ca879025b99",
+        "android_client_info": {
+          "package_name": "com.example.q_run2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "179155447644-akl2obegum31bins7n4alflrp4m3gjos.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.q_run2",
+            "certificate_hash": "840868fc4cd7663350bbbefd42128bde3c87772d"
+          }
+        },
+        {
+          "client_id": "179155447644-k28ld3d857f4eqvn4s50q1sa381cj8ce.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.q_run2",
+            "certificate_hash": "1c9f241dc7deef75d7c6d1dc1fa1e5a26d053b02"
+          }
+        },
+        {
+          "client_id": "179155447644-cosc4tc9s3gqtmusvda4vg1q396jurjj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAc-j5Kv8aYJVGLtP_6VoDiCFgqEm6_opw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "179155447644-cosc4tc9s3gqtmusvda4vg1q396jurjj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

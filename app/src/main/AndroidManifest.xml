@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,7 +13,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Homepage_Runner"></activity>
+        <activity android:name=".She_Run"></activity>
+        <activity android:name=".GreatMalaysiaRun_detail" />
+        <activity android:name=".EcoTrail_detail" />
+        <activity android:name=".MalaysiaDay_Detail_Half" />
+        <activity android:name=".Homepage_Runner" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".Log_In" />
         <activity android:name=".Sign_Up" />
