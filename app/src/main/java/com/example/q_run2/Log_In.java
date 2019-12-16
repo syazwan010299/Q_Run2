@@ -22,7 +22,7 @@ public class Log_In extends AppCompatActivity {
     EditText emailInput,passwordInput;
     Button login;
     TextView titleRegister,signUp;
-    FirebaseAuth mFirebaseAuth;
+    private FirebaseAuth mFirebaseAuth;
 
     private FirebaseAuth.AuthStateListener mAuthStateListener;
 
@@ -101,6 +101,8 @@ public class Log_In extends AppCompatActivity {
     @Override
     protected void onStart(){
         super.onStart();
+        FirebaseUser currentUser = mFirebaseAuth.getCurrentUser();
         mFirebaseAuth.addAuthStateListener(mAuthStateListener);
     }
+
 }
