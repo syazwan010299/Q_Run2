@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">qrunapp</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
     <string name="ecotrail_description">
         In conjunction with the celebration of 80th Anniversary of Malaysian Nature Society (MNS) in championing nature conservation and wildlife protection through research and advocacy in Malaysia,
         we are proud to be the co-organiser of the Ecotrail Putrajaya 2019, in our quest to create greater awareness for all Malaysians in preserving our mother nature.

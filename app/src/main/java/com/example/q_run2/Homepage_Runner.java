@@ -1,11 +1,16 @@
 package com.example.q_run2;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+
+import com.google.android.material.bottomnavigation.BottomNavigationItemView;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Homepage_Runner extends AppCompatActivity {
 
@@ -22,6 +27,8 @@ public class Homepage_Runner extends AppCompatActivity {
         eco2 = (ImageButton) findViewById(R.id.eco2);
         great2 = (ImageButton) findViewById(R.id.great2);
         she2 = (ImageButton) findViewById(R.id.she2);
+        BottomNavigationView bottomNav = (BottomNavigationView) findViewById(R.id.bottom_navigation);
+        bottomNav.setOnNavigationItemSelectedListener(navigationListener);
 
         halfMalaysiaMarathon.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,4 +81,28 @@ public class Homepage_Runner extends AppCompatActivity {
             }
         });
     }//end of the onCreate
+
+    //doing method for the bottom navigation
+    private BottomNavigationView.OnNavigationItemSelectedListener navigationListener =
+            new BottomNavigationView.OnNavigationItemSelectedListener() {
+                @Override
+                public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+
+                    switch (menuItem.getItemId()){
+                        case R.id.action_home:
+                            startActivity(new Intent(Homepage_Runner.this,Homepage_Runner.class));
+                            break;
+                        case R.id.action_category:
+                            startActivity(new Intent(Homepage_Runner.this,category.class));
+                            break;
+                        case R.id.action_timer:
+                            startActivity(new Intent(Homepage_Runner.this,stopwatch.class));
+                            break;
+                        case R.id.action_profile:
+                            startActivity(new Intent(Homepage_Runner.this,profile.class));
+                            break;
+                    }
+                    return true;
+                }
+            };
 }

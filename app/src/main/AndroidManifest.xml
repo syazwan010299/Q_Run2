@@ -13,7 +13,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".She_Run"></activity>
+        <activity android:name=".Notification"></activity>
+        <activity android:name=".sidemenu_header" />
+        <activity android:name=".profile" />
+        <activity android:name=".stopwatch" />
+        <activity android:name=".category" />
+        <activity android:name=".She_Run" />
         <activity android:name=".GreatMalaysiaRun_detail" />
         <activity android:name=".EcoTrail_detail" />
         <activity android:name=".MalaysiaDay_Detail_Half" />
