@@ -152,7 +152,7 @@ public class Sign_Up extends AppCompatActivity {
                         // [START_EXCLUDE]
                         //hideProgressDialog();
                         // [END_EXCLUDE]
-                        startActivity(new Intent(Sign_Up.this,Log_In.class));
+                        startActivity(new Intent(Sign_Up.this,Homepage_Runner.class));
 
                     }
                 });

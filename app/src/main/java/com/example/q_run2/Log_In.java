@@ -48,8 +48,9 @@ public class Log_In extends AppCompatActivity {
                     Intent i = new Intent(Log_In.this,Homepage_Runner.class);
                     startActivity(i);
                 }else{
-                    Toast.makeText(Log_In.this,"Error",Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(Log_In.this,"Error",Toast.LENGTH_SHORT).show();
                 }
+
 
             }
         };
