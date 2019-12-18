@@ -29,7 +29,7 @@ public class category extends AppCompatActivity {
 
                     switch (menuItem.getItemId()){
                         case R.id.action_home:
-                            startActivity(new Intent(category.this,Homepage_Runner.class));
+                            startActivity(new Intent(category.this,Homepage_Admin.class));
                             break;
                         case R.id.action_category:
                             startActivity(new Intent(category.this,category.class));

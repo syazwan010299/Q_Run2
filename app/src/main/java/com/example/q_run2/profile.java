@@ -59,7 +59,7 @@ public class profile extends AppCompatActivity implements NavigationView.OnNavig
 
                     switch (menuItem.getItemId()){
                         case R.id.action_home:
-                            startActivity(new Intent(profile.this,Homepage_Runner.class));
+                            startActivity(new Intent(profile.this,Homepage_Admin.class));
                             break;
                         case R.id.action_category:
                             startActivity(new Intent(profile.this,category.class));

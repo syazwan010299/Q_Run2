@@ -8,14 +8,16 @@
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:largeHeap="true"
-        android:hardwareAccelerated="false">
-        <activity android:name=".Notification"></activity>
+        android:theme="@style/AppTheme">
+        <activity android:name=".Homepage_Admin"></activity>
+        <activity android:name=".purchases" />
+        <activity android:name=".Notification" />
         <activity android:name=".sidemenu_header" />
         <activity android:name=".profile" />
         <activity android:name=".stopwatch" />
