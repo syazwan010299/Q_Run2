@@ -12,42 +12,41 @@ import android.widget.ImageButton;
 import com.google.android.material.bottomnavigation.BottomNavigationItemView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class category extends AppCompatActivity {
+public class FullMarathon extends AppCompatActivity {
 
-    ImageButton HalfMarathon,walkathon,fullmarathon;
+    ImageButton previous,marathon1,marathon2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_category);
-        HalfMarathon = findViewById(R.id.halfmarathon);
-        walkathon = findViewById(R.id.walkathon);
-        fullmarathon = findViewById(R.id.fullmarathon);
+        setContentView(R.layout.activity_full_marathon);
+        previous = findViewById(R.id.previous);
+        marathon1 = findViewById(R.id.marathon1);
+        marathon2 = findViewById(R.id.marathon2);
 
         BottomNavigationView bottomNav = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         bottomNav.setOnNavigationItemSelectedListener(navigationListener);
 
-        walkathon.setOnClickListener(new View.OnClickListener() {
+        previous.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(category.this, com.example.q_run2.walkathon.class));
+                FullMarathon.super.onBackPressed();
             }
         });
 
-        HalfMarathon.setOnClickListener(new View.OnClickListener() {
+        marathon1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(category.this, com.example.q_run2.HalfMarathon.class));
+                startActivity(new Intent(FullMarathon.this,GreatMalaysiaRun_detail.class));
             }
         });
 
-        fullmarathon.setOnClickListener(new View.OnClickListener() {
+        marathon2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(category.this,FullMarathon.class));
+                startActivity(new Intent(FullMarathon.this,EcoTrail_detail.class));
             }
         });
-
-
     }//end of the OnCreate
 
     //doing method for the bottom navigation
@@ -58,16 +57,16 @@ public class category extends AppCompatActivity {
 
                     switch (menuItem.getItemId()){
                         case R.id.action_home:
-                            startActivity(new Intent(category.this,Homepage_Admin.class));
+                            startActivity(new Intent(FullMarathon.this,Homepage_Admin.class));
                             break;
                         case R.id.action_category:
-                            startActivity(new Intent(category.this,category.class));
+                            startActivity(new Intent(FullMarathon.this,category.class));
                             break;
                         case R.id.action_timer:
-                            startActivity(new Intent(category.this,stopwatch.class));
+                            startActivity(new Intent(FullMarathon.this,stopwatch.class));
                             break;
                         case R.id.action_profile:
-                            startActivity(new Intent(category.this,profile.class));
+                            startActivity(new Intent(FullMarathon.this,profile.class));
                             break;
                     }
                     return true;

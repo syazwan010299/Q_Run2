@@ -15,7 +15,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Homepage_Admin"></activity>
+        <activity android:name=".FullMarathon"></activity>
+        <activity android:name=".HalfMarathon" />
+        <activity android:name=".walkathon" />
+        <activity android:name=".Homepage_Admin" />
         <activity android:name=".purchases" />
         <activity android:name=".Notification" />
         <activity android:name=".sidemenu_header" />
@@ -28,7 +31,13 @@
         <activity android:name=".MalaysiaDay_Detail_Half" />
         <activity android:name=".Homepage_Runner" />
         <activity android:name=".HomeActivity" />
-        <activity android:name=".Log_In" />
+        <activity android:name=".Log_In">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
         <activity android:name=".Sign_Up" />
 
         <meta-data
@@ -37,7 +46,7 @@
 
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.ASSIST" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
