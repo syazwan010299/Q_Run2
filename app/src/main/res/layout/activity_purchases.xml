@@ -6,6 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <!--APP BAR CUSTOM BACKGROUND-->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/appBarD"
         android:layout_width="match_parent"
@@ -59,12 +60,24 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_action_back" />
 
+    <!--<ListView-->
+        <!--android:id="@+id/payment"-->
+        <!--android:layout_width="409dp"-->
+        <!--android:layout_height="654dp"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/appBarD"-->
+        <!--android:entries="@array/payment_method">-->
+
+    <!--</ListView>-->
+
+
     <ListView
+        android:id="@+id/listview"
         android:layout_width="409dp"
         android:layout_height="654dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/appBarD"
-        android:entries="@array/payment_method"/>
+        app:layout_constraintTop_toBottomOf="@id/appBarD" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

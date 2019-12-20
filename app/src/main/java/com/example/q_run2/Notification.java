@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationItemView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -23,11 +24,15 @@ public class Notification extends AppCompatActivity {
         reverse = (ImageButton)findViewById(R.id.previous);
         BottomNavigationView bottomNav = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         bottomNav.setOnNavigationItemSelectedListener(navigationListener);
+        TextView textView = (TextView) findViewById(R.id.textView3);
+
+        String message = getIntent().getStringExtra("message");
+        textView.setText(message);
 
         reverse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Notification.this,profile.class));
+                Notification.super.onBackPressed();
             }
         });
     }
