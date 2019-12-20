@@ -62,6 +62,7 @@ public class purchases extends AppCompatActivity {
                         notificationManager.notify(0,builder.build());
                         break;
                     case "Credit/Debit Card":
+                        Toast.makeText(purchases.this,"Successful",Toast.LENGTH_SHORT).show();
                         String message1 = "You purchased using Credit/Debit Card";
                         NotificationCompat.Builder builder1 = new NotificationCompat.Builder(
                                 purchases.this
